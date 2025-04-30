@@ -45,6 +45,9 @@ const wineBottle = {
     body: 'Full-bodies',
 }
 console.log(wineBottle);
+
+//Need to add the methods to this.
+
 /*
 write a Product class that has the following properties:
 
