@@ -48,7 +48,7 @@ const wineBottle = {
     style: 'Intense',
     body: 'Full-bodied',
     drink(amount){
-        wineBottle.amountRemaining - amount; //am I doing this part right? or do I need to have a return here?
+        const updatedAmountRemaining = wineBottle.amountRemaining - amount; //am I doing this part right? or do I need to have a return here?
         // console.log(wineBottle.drink); //is this where I can check this?
     },
     refill(amount){
@@ -57,14 +57,19 @@ const wineBottle = {
 }
 
 wineBottle.drink(5);//calling function with argument of 5
-console.log(wineBottle.drink);//checking to see if it works - outcome should be 20
+console.log(wineBottle.drink);//checking to see if it works - outcome should be 20 //chatgpt says this just prints the function not the value
 //What's logging is [Function: drink]
+console.log(wineBottle.amountRemaining);//This prints the amount remaining of 25. How do I get it to print what happens after the function?
+console.log(wineBottle.drink.updatedAmountRemaining);//undefined probably cause it's in function scope
 
 wineBottle.refill(10);//calling function with argument of 10
 console.log(wineBottle.refill);//checking to see if it works - outcome should be 35
 //What's logging is [Function: refill]
 
 // console.log(wineBottle);
+
+//chatGpt is saying what's not working is that I'm not saving the result after doing adding and subtracting.
+
 
 
 
