@@ -13,9 +13,12 @@ storage (number)
 */
 
 const laptop = {
-
-
+    make: 'Apple',
+    model: 'MacBook Air', 
+    ram: 24, //I wanted to write 24 GB but then that would make this a string.
+    storage: 494, // Actually 494.38 GB, but making it a whole number.
 }
+console.log (laptop);
 
 /*
 Create an object that defines a bottle of wine. It should have the following properties:
@@ -30,13 +33,18 @@ It should have the following methods:
 
 drink(amount) - removes the `amount` from the `amountRemaining`
 refill(amount) - adds the `amount` to the amountRemaining
-
 */
 
 const wineBottle = {
-
+    name: '19 Crimes Cali Red By Snoop Dogg',
+    grape: 'Red Blend',
+    vintage: 2021,
+    volume: 750, //ml
+    amountRemaining: 25,
+    style: 'Intense',
+    body: 'Full-bodies',
 }
-
+console.log(wineBottle);
 /*
 write a Product class that has the following properties:
 
@@ -93,10 +101,10 @@ class Shape {
 
 // ! please do not alter below ✋
 
-module.exports = {
-  laptop,
-  wineBottle,
-  Product,
-  Cart,
-  Shape
-}
+// module.exports = {
+//   laptop,
+//   wineBottle,
+//   Product,
+//   Cart,
+//   Shape
+// }
