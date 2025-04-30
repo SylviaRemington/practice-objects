@@ -42,11 +42,12 @@ const wineBottle = {
     volume: 750, //ml
     amountRemaining: 25,
     style: 'Intense',
-    body: 'Full-bodies',
+    body: 'Full-bodied',
 }
 console.log(wineBottle);
 
 //Need to add the methods to this.
+
 
 /*
 write a Product class that has the following properties:
@@ -66,6 +67,10 @@ const product = {
   price: 9.99,
 }
 console.log(product);
+console.log(product.name);
+console.log(product.description);
+console.log(product.price);
+
 
 /*
 Write a Cart class that has the following properties:
