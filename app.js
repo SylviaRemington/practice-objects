@@ -4,6 +4,7 @@
 console.log('Working!'); //to check if js page is linked and working
 
 /*
+EXERCISE 1
 Create an object that defines a laptop. It should have the following properties:
 
 make (string)
@@ -12,15 +13,17 @@ ram (number)
 storage (number)
 */
 
-const laptop = {
-    make: 'Apple',
-    model: 'MacBook Air', 
-    ram: 24, //I wanted to write 24 GB but then that would make this a string.
-    storage: 494, // Actually 494.38 GB, but making it a whole number.
-}
-console.log (laptop);
+// EXERCISE 1
+// const laptop = {
+//     make: 'Apple',
+//     model: 'MacBook Air', 
+//     ram: 24, //I wanted to write 24 GB but then that would make this a string.
+//     storage: 494, // Actually 494.38 GB, but making it a whole number.
+// }
+// console.log (laptop);
 
 /*
+EXERCISE 2
 Create an object that defines a bottle of wine. It should have the following properties:
 
 name (string)
@@ -35,6 +38,7 @@ drink(amount) - removes the `amount` from the `amountRemaining`
 refill(amount) - adds the `amount` to the amountRemaining
 */
 
+// EXERCISE 2 - FIRST TRY
 const wineBottle = {
     name: '19 Crimes Cali Red By Snoop Dogg',
     grape: 'Red Blend',
@@ -43,13 +47,31 @@ const wineBottle = {
     amountRemaining: 25,
     style: 'Intense',
     body: 'Full-bodied',
+    drink(amount){
+        wineBottle.amountRemaining - amount; //am I doing this part right? or do I need to have a return here?
+        // console.log(wineBottle.drink); //is this where I can check this?
+    },
+    refill(amount){
+        wineBottle.amountRemaining + amount;//am I doing this part right? Or do I need to have a return here?
+    },
 }
-console.log(wineBottle);
 
-//Need to add the methods to this.
+wineBottle.drink(5);//calling function with argument of 5
+console.log(wineBottle.drink);//checking to see if it works - outcome should be 20
+//What's logging is [Function: drink]
+
+wineBottle.refill(10);//calling function with argument of 10
+console.log(wineBottle.refill);//checking to see if it works - outcome should be 35
+//What's logging is [Function: refill]
+
+// console.log(wineBottle);
+
+
+
 
 
 /*
+EXERCISE 3
 write a Product class that has the following properties:
 What is a product class?
 
@@ -61,15 +83,16 @@ price (number)
 
 // }
 
-const product = {
-  name: 'The Supahstaaaar Doll',
-  description: 'This doll performs the superstar pose anytime someone yells supahstaaaar!',
-  price: 9.99,
-}
-console.log(product);
-console.log(product.name);
-console.log(product.description);
-console.log(product.price);
+// EXERCISE 3
+// const product = {
+//   name: 'The Supahstaaaar Doll',
+//   description: 'This doll performs the superstar pose anytime someone yells supahstaaaar!',
+//   price: 9.99,
+// }
+// console.log(product);
+// console.log(product.name);
+// console.log(product.description);
+// console.log(product.price);
 
 
 /*
