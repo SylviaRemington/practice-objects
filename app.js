@@ -48,7 +48,8 @@ const wineBottle = {
     style: 'Intense',
     body: 'Full-bodied',
     drink(amount){
-        const updatedAmountRemaining = wineBottle.amountRemaining - amount; //am I doing this part right? or do I need to have a return here?
+        wineBottle.amountRemaining - amount; //am I doing this part right? Or do I need to have a return here?
+        // const updatedAmountRemaining = wineBottle.amountRemaining - amount; //am I doing this part right? or do I need to have a return here?
         // wineBottle.amountRemaining - amount = this.amountRemaining;//could this work?
         // console.log(wineBottle.drink); //is this where I can check this?
     },
