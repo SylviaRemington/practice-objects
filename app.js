@@ -1,4 +1,7 @@
 // This is just additional practice that my instructor Tristan Hall provided for Objects.
+// This page is called problems.js
+
+console.log('Working!'); //to check if js page is linked and working
 
 /*
 Create an object that defines a laptop. It should have the following properties:
