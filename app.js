@@ -50,15 +50,22 @@ console.log(wineBottle);
 
 /*
 write a Product class that has the following properties:
+What is a product class?
 
 name (string)
 description (string)
 price (number)
 */
+// class Product {
 
-class Product {
-  
+// }
+
+const product = {
+  name: 'The Supahstaaaar Doll',
+  description: 'This doll performs the superstar pose anytime someone yells supahstaaaar!',
+  price: 9.99,
 }
+console.log(product);
 
 /*
 Write a Cart class that has the following properties:
