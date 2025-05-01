@@ -71,12 +71,39 @@ console.log(wineBottle.refill(10));//checking to see if it works - outcome shoul
 
 // console.log(wineBottle);
 
+//From 4/29
 //Earlier, chatGpt said what's not working is that I'm not saving the result after doing adding and subtracting.
 
 
+/*What I messaged Tristan Hall about 4/30/25 to better understand coding this exercise 2:
+
+I just messaged Alara. She said that all I was missing was adding a return to this. I’m going to try that and go from there.
 
 
+Sylvia Remington
+  9:14 PM
+So this is what I ended up with... But I don't know how to think through the part of: 
+how do I get the amountRemaining to update to the new drink or update to the refill number? 
+Could you help me with the thought process behind figuring this out? 
+I get stuck... and I really don't even know what to do from there. 
+ChatGPT said the following but I don't understand what this means: 
+"To fix this, you need to assign the new value back to amountRemaining inside your drink and refill methods." 
+And then they give an example of how to solve the code, but I don't understand their version of the solve either. 
+I'm just trying to figure out how to think through the code so that I can further research it on my own, 
+but I'm not sure how to think through it at this point. 
 
+The code that chatgpt gave an example of was:  
+drink(amount) {
+        this.amountRemaining -= amount; // update the value
+        return this.amountRemaining;    // optional: return new value
+    },... I understand the "this" part... 
+    But I don't understand what it means to assign a value back to the amountRemaining 
+    (Does that mean to save it?). 
+    Also, I don't understand -= either. 
+    
+Could you help me with questions I can ask when I get stuck to move forward? 
+I'm still learning how to think like a coder.
+*/
 
 /*
 EXERCISE 3
