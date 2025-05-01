@@ -81,13 +81,13 @@ console.log(wineBottle.refill(10));//checking to see if it works - outcome shoul
 /*
 EXERCISE 3
 write a Product class that has the following properties:
-What is a product class?
 
 name (string)
 description (string)
 price (number)
 */
 // class Product {
+    // (MY NOTE: What is a product class?)
 
 // }
 
