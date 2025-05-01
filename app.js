@@ -14,13 +14,13 @@ storage (number)
 */
 
 // EXERCISE 1
-// const laptop = {
-//     make: 'Apple',
-//     model: 'MacBook Air', 
-//     ram: 24, //I wanted to write 24 GB but then that would make this a string.
-//     storage: 494, // Actually 494.38 GB, but making it a whole number.
-// }
-// console.log (laptop);
+const laptop = {
+    make: 'Apple',
+    model: 'MacBook Air', 
+    ram: 24, //I wanted to write 24 GB but then that would make this a string.
+    storage: 494, // Actually 494.38 GB, but making it a whole number.
+}
+console.log (laptop);
 
 /*
 EXERCISE 2
@@ -38,7 +38,7 @@ drink(amount) - removes the `amount` from the `amountRemaining`
 refill(amount) - adds the `amount` to the amountRemaining
 */
 
-// EXERCISE 2 - FIRST TRY
+// EXERCISE 2 
 const wineBottle = {
     name: '19 Crimes Cali Red By Snoop Dogg',
     grape: 'Red Blend',
@@ -48,31 +48,30 @@ const wineBottle = {
     style: 'Intense',
     body: 'Full-bodied',
     drink(amount){
-        wineBottle.amountRemaining - amount; //am I doing this part right? Or do I need to have a return here?
-        // const updatedAmountRemaining = wineBottle.amountRemaining - amount; //am I doing this part right? or do I need to have a return here?
-        // wineBottle.amountRemaining - amount = this.amountRemaining;//could this work?
-        // console.log(wineBottle.drink); //is this where I can check this?
+        return wineBottle.amountRemaining - amount; 
     },
     refill(amount){
-        wineBottle.amountRemaining + amount;//am I doing this part right? Or do I need to have a return here?
+        return wineBottle.amountRemaining + amount;
     },
 }
 
+//I want to create a function that says if the drink function is activated, 
+// then update the amount remaining property. Else if the refill function is activated, 
+// then update the amount remaining property with the refill amount. Not sure how to do this.
+// if (wineBottle.drink === true)
+
 wineBottle.drink(5);//calling function with argument of 5
-console.log(wineBottle.drink);//checking to see if it works - outcome should be 20 //chatgpt says this just prints the function not the value
-//What's logging is [Function: drink]
+console.log(wineBottle.drink(5));//checking to see if it works - outcome should be 20 
 
-console.log(wineBottle.amountRemaining);//This prints the amount remaining of 25. How do I get it to print what happens after the function?
-
-console.log(wineBottle.drink.updatedAmountRemaining);//undefined probably cause it's in function scope
+console.log(wineBottle.amountRemaining);
+//How do I get amountRemaining to update to the new drink or refill number?
 
 wineBottle.refill(10);//calling function with argument of 10
-console.log(wineBottle.refill);//checking to see if it works - outcome should be 35
-//What's logging is [Function: refill]
+console.log(wineBottle.refill(10));//checking to see if it works - outcome should be 35
 
 // console.log(wineBottle);
 
-//chatGpt is saying what's not working is that I'm not saving the result after doing adding and subtracting.
+//Earlier, chatGpt said what's not working is that I'm not saving the result after doing adding and subtracting.
 
 
 
