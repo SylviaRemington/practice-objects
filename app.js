@@ -1,5 +1,5 @@
 // This is just additional practice that my instructor Tristan Hall provided for Objects.
-// This page is called problems.js
+// Played around with this when I had time... will continue to learn more and add to this page at a later date.
 
 console.log('Working!'); //to check if js page is linked and working
 
