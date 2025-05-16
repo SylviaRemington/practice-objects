@@ -1,5 +1,6 @@
 // This is just additional practice that my instructor Tristan Hall provided for Objects.
 // Played around with this when I had time... will continue to learn more and add to this page at a later date.
+// PRACTICE SESSIONS for working on objects & for better understanding of coding objects in JS
 
 console.log('Working!'); //to check if js page is linked and working
 
